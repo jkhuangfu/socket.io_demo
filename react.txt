@@ -1,0 +1,9 @@
+React使用socket.io
+npm i socket.io-client -S
+1、import io from 'socket.io-client';
+2、constructor里面初始化io this.socket = io.connect(server的地址);
+3、componentDidMount里给socket绑定上事件
+    socket.on(事件的key, (msg) => {
+        //msg是后台返回的数据，具体看你们后台返回的拿到数据后就可以操作了，改变state或者redux
+    });
+4、componentWillUnmount里面 this.socket.close();
