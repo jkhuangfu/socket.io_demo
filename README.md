@@ -1,4 +1,4 @@
-# socket_demo
+# socket.io_demo
 PS：运行方法
 
     (1) npm i
